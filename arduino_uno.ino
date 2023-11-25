@@ -21,12 +21,12 @@ void loop() {
   switch (temp_val > 30)
   {
      case 1:{
-        timer.every(1000, toggle_led);
-        Serial.print("500 \n");}//blink at 500ms
+        timer.every(500, toggle_led);
+        } //blink at 500ms
        break;
      default:{
-        timer.every(500, toggle_led);
-       Serial.print("200 \n");} //blink at 200ms
+        timer.every(250, toggle_led);
+       } //blink at 250ms
   }
   timer.tick();
 }
